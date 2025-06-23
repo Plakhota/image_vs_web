@@ -13,3 +13,7 @@ To run the project:
 npm i
 npm test
 ```
+
+
+The result show difference in the structure between the design and the webpage:
+<img width="1623" alt="image" src="https://github.com/user-attachments/assets/5b002b3e-8ea0-4479-a8dc-ea63ec4049aa" />
