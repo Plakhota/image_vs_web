@@ -10,6 +10,7 @@ The flow is:
 To run the project:
 
 ```
+#make sure APPLITOOLS_API_KEY is set in env
 npm i
 npm test
 ```
