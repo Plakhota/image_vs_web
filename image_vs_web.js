@@ -73,8 +73,7 @@ async function runTest(viewport) {
         const eyes = new Eyes(new VisualGridRunner(new RunnerOptions().testConcurrency(5)));
 
         const config = new Configuration();
-        config.setAppName('My App');
-        config.setTestName('My Test');
+        
         config.setBatch(new BatchInfo('Comparison'));
         config.addBrowser(viewport.width, viewport.height, BrowserType.CHROME);
         config.addBrowser(viewport.width, viewport.height, BrowserType.FIREFOX);
@@ -86,8 +85,6 @@ async function runTest(viewport) {
         eyes.setConfiguration(config);
 
         await eyes.open(page,  'Applitools site', 'Image Comparison Test', new RectangleSize(viewport.width, 600));
-
-        await page.goto('https://example.com');
 
         await page.goto('https://demo.applitools.com');
         await page.type('#username', 'andy');
