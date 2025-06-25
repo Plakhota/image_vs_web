@@ -80,6 +80,8 @@ async function runTest(viewport) {
         config.addBrowser(viewport.width, viewport.height, BrowserType.SAFARI);
 
         config.setBaselineEnvName('BANKIMAGES');
+        config.setSaveNewTests(false);
+
 
     
         eyes.setConfiguration(config);
